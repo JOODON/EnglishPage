@@ -11,4 +11,9 @@ public class MainPageController {
 
         return "mainpage";
     }
+    @GetMapping("/EnglishPage/login")
+    public String loginPage(){
+
+        return "loginPage";
+    }
 }
