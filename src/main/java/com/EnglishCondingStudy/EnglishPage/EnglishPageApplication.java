@@ -9,5 +9,4 @@ public class EnglishPageApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(EnglishPageApplication.class, args);
 	}
-
 }
