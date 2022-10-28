@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+    <script src="https://kit.fontawesome.com/f696815b8c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    *{
+        font-family: 'Gamja Flower', cursive;
+        font-size: 30px;
+    }
+    header h1{
+        font-family: 'Signika Negative', sans-serif;
+        width: 30%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        font-size: 2em;
+    }
+    header h1 i{
+        font-size: 1em;
+    }
+    main{
+        display: flex;
+        margin: auto;
+        margin-top: 10%;
+        justify-content: center;
+        height: 600px;
+    }
+    main>div{
+        width: 20%;
+        height: 100%;
+        border: 1px solid #000309;
+        text-align: center;
+        border-radius: 5%;
+        background-color: #92a1f5;
+    }
+    main>div:hover{
+        background-color: #dede94;
+    }
+    .mainPage{
+        margin-left: 5%;
+    }
+    footer .title{
+        width: 50%;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    footer .sub-title{
+        width: 50%;
+        margin: auto;
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+<header>
+    <h1><i class="fa-regular fa-clipboard"></i>&nbsp;English Study&nbsp;<i class="fa-regular fa-clipboard"></i></h1>
+</header>
+<main>
+    <div class="inputPage">
+        <p><i class="fa-solid fa-user"></i>회원가입 / 로그인 페이지 이동</p>
+        <img src=로그인%20페이지%20이미지.png width="60%" height="30%">
+    </div>
+    <div class="mainPage"><p><i class="fa-solid fa-language"></i>영어 단어 등록하러 가기 </p>
+        <img src=메인페이지.jpg width="60%" height="30%"></div>
+</main>
+
+<footer>
+    <div class="title">
+        자신이 등록한 영단어를 확인하고 퀴즈까지 풀어보자
+    </div>
+    <div class="sub-title">
+        (우)22217 인천광역시 주안동 인하로236 (주안동) TEL. 032-111-1234 FAX. 032-000-0000<br>
+        MyPotPol © 2022 Incheon CITY. All Rights Reserved.
+    </div>
+</footer>
+<script>
+    let loginPage=document.querySelector(".inputPage");
+    let MainPage=document.querySelector(".mainPage");
+
+    loginPage.addEventListener(`click`,function(){
+        alert("로그인 페이지로 이동합니다");
+        location.href="#";
+    });
+
+    MainPage.addEventListener(`click`,function(){
+        alert("메인 페이지로 이동합니다");
+        location.href="#";
+    });
+</script>
+</body>
+</html>
